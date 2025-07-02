@@ -35,6 +35,7 @@
 
         .main {
             padding: 30px;
+            margin-left: 220px;
         }
 
         .card {
@@ -76,6 +77,11 @@
                 margin-left: 0;
             }
 
+            .main {
+                margin-left: 10px;
+                margin-top: 70px;
+            }
+
         }
 
     </style>
@@ -83,7 +89,8 @@
 <body>
     <!--Nota: as classes outside, sidebar, username e toggle são manuais-->
     <div class="outside d-flex">
-        <div class="sidebar d-flex flex-sm-column p-3 flex-shrink-0" style="background-color: rgb(10, 9, 9);">
+        <div class="sidebar d-flex flex-sm-column p-3 flex-shrink-0" 
+        style="background-color: rgb(10, 9, 9); position: fixed;">
                 <div class="username">
                     <a href="" class="d-flex text-white text-decoration-none">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
@@ -130,7 +137,8 @@
                 </div>
         </div>
 
-        <main class="main" hx-get="pages/home.html" hx-trigger="load"></main>
+        <main class="main"
+        hx-get="pages/home.html" hx-trigger="load"></main>
         </main>
     </div>
 
