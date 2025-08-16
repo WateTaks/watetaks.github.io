@@ -1,15 +1,21 @@
-<h1>Blog</h1>
-<div class="container mt-4">
-    <div class="col-md-5 mb-4">
-        <div class="card h-100" hx-get="blogs/post1.html" hx-target="closest main" hx-swap="innerHTML">
-            <img src="assets/coffee.jpg" class="card-img-top" alt="coffee image">
-            <div class="card-body">
-                <h3>Caminhos no bacharel</h3>
-                <p class="card-text">Pensamentos sobre minha jornada no curso</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:p-16">
+
+    <div class="card bg-base-300 shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
+         hx-get="blog/post1.html" hx-target="closest main" hx-swap="innerHTML">
+        
+        <figure>
+            <img src="assets/coffee.jpg" alt="Coffee" class="aspect-video object-cover" />
+        </figure>
+
+        <div class="card-body p-6">
+            <div class="flex-grow">
+                <h2 class="card-title">Caminhos no Bacharel</h2>
+                <p class="mt-1 text-base-content/70">Pensamentos sobre minha jornada no curso de Ciência da Computação e os caminhos que pretendo seguir.</p>
             </div>
-            <div class="card-footer text-body-secondary">
-                2 de julho, 2025
+            <div class="card-actions justify-end mt-4">
+                <p class="text-sm text-base-content/60">2 de julho, 2025</p>
             </div>
         </div>
     </div>
+    
 </div>
