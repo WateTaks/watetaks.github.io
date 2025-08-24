@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sunset">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAC0214</title>
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--daisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+    <!--HTMX -->
+    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+
+    <!--p5.js-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.js"></script>
+
+    <!--Styling-->
+    <style>
+        .code-content > pre {
+            white-space: pre-wrap !important;
+            overflow-wrap: break-word !important;
+            padding-left: 2.5rem;
+            text-indent: -2.5rem;
+        }
+
+        .code-content > p {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .code-content > h1 {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<!--Style: minimalist synthwavy? -->
+<body class="min-h-screen flex flex-col">
+
+    <div id="canvas-container"></div>
+
+    <div class="content-wrapper">
+    <!-- Navbar section -->
+     <nav class="inset-x-2 flex justify-center p-5">
+        <div class="navbar max-w-256 bg-base-300 shadow-sm rounded-full">
+            <!--Start of navbar -->
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl rounded-full">oliveR</a>
+            </div>
+            
+            <div class="navbar-center">
+                <!--Menu displayed on -->
+                <ul class="menu menu-horizontal">
+                    <li>
+                        <a class="hover:text-base-content text-accent" hx-get="pages/home.html" hx-target="#content" hx-swap="innerHTML transition:true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            <span class="hidden lg:inline text-lg">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:text-base-content text-info" hx-get="pages/blog.html" hx-target="#content" hx-swap="innerHTML transition:true">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M4 19.5A2.5 2.5 0 0 1 1.5 17V7c0-1.1.9-2 2-2h1.5"/></svg>
+                            <span class="hidden lg:inline text-lg">Blog</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-end">
+                <a class="btn btn-ghost text-xl rounded-full opacity-0 pointer-events-none">oliveR</a>
+            </div>
+        </div>
+     </nav>
+
+    <!--Canvas backgroud-->
+
+    <!-- Main content section -->
+    <!-- Sometime in the future i'll turn this into a bash terminal, would be very fun! -->
+
+    <main class="flex justify-center p-3"
+          id="content"
+          hx-get="pages/home.html"
+          hx-trigger="load">
+
+          <span class="loading loading-dots loading-lg"></span>
+    </main>
+    </div>
+
+</body>
+</html>
