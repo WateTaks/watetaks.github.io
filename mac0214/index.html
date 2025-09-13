@@ -45,7 +45,68 @@
             width: 100%;
         }
 
+    </style>
 
+    <style type="text/tailwindcss">
+        .prose {
+          color: var(--fallback-bc,oklch(var(--bc)/1));
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+        }
+        .prose :where(p):not(:where([class~="not-prose"] *)) {
+          margin-top: 1.25em;
+          margin-bottom: 1.25em;
+        }
+        .prose :where(h1):not(:where([class~="not-prose"] *)) {
+          font-size: 2.5rem;
+          line-height: 2.75rem;
+          margin-top: 0;
+          margin-bottom: 0.8888889em;
+          font-weight: 800;
+        }
+        .prose :where(h2):not(:where([class~="not-prose"] *)) {
+          font-size: 1.75rem;
+          line-height: 2.25rem;
+          margin-top: 2em;
+          margin-bottom: 1em;
+          font-weight: 700;
+        }
+        .prose :where(h3):not(:where([class~="not-prose"] *)) {
+          font-size: 1.375rem;
+          line-height: 2rem;
+          margin-top: 1.6em;
+          margin-bottom: 0.6em;
+          font-weight: 600;
+        }
+        .prose :where(a):not(:where([class~="not-prose"] *)) {
+          color: var(--fallback-p,oklch(var(--p)/1));
+          text-decoration-line: none;
+          font-weight: 600;
+        }
+        .prose :where(a):not(:where([class~="not-prose"] *)):hover {
+          text-decoration-line: underline;
+        }
+        .prose :where(hr):not(:where([class~="not-prose"] *)) {
+            border-color: var(--fallback-n,oklch(var(--n)/.2));
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+        .prose :where(ul, ol):not(:where([class~="not-prose"] *)) {
+            list-style-type: disc;
+            padding-left: 1.625em;
+        }
+        .prose :where(li):not(:where([class~="not-prose"] *)) {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        .prose :where(blockquote):not(:where([class~="not-prose"] *)) {
+          font-weight: 500;
+          font-style: italic;
+          border-left-width: 0.25rem;
+          border-left-color: var(--fallback-n,oklch(var(--n)/.2));
+          quotes: "\201C""\201D""\2018""\2019";
+          padding-left: 1em;
+        }
     </style>
 </head>
 <!--Style: minimalist synthwavy? -->
