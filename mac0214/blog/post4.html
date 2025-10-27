@@ -1,0 +1,73 @@
+<main class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+
+<div class="mb-8">
+    <a href="" class="btn btn-ghost gap-2" hx-get="pages/blog.html" 
+        hx-target="#content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+        </svg>
+        Voltar para o Blog
+    </a>
+</div>
+
+
+<article class="mockup-window bg-base-300 border border-base-300 w-full max-w-256 shadow-lg text-white [&_a]:text-accent">
+    <div class="prose lg:prose-xl prose-invert max-w-none break-word p-6 md:p-8">
+        <h1 class="mt-2">Progresso #4</h1>
+        <p>27 de outubro, 2025</p>
+        <hr>
+        
+        <p>Olá, este é o quarto post deste site, onde combinarei dois posts que pretendi fazer a um bom tempo, mas que tive pouco tempo para adicionar de fato.</p>
+        <p>Dessa forma, dividirei o post em duas seções: preparação até um pouco antes da semana do evento, e a semana do evento de fato.</p>
+        <h2>Parte 1</h2>
+        <hr>
+
+        <p>Até o dia 15, participei de duas reuniões gerais (em 03/10 e 10/10), que contabilizaram em torno de <b>3h</b>, atualizando sobe os membros sobre o progresso dos GT's.
+        Em especial, fiquei muito mais responsável por dar atualizações sobre o GT técnico, e as decisões que estavam sendo tomadas. Mas também atualizei sobre os status de patrocinadores que ainda precisavam mandar contratos necessários, etc.</p>
+        <p>Com relação à tarefas de organização geral, fiquei menos encarregado desta parte. Apenas tomei conta de monitorar alguns e-mails e arquivos do evento, para garantir atualizações, etc.
+        </p>
+        <p>Adicionalmente, fiquei responsável, juntamente com alguns colegas, por distribuir materiais de divulgação (posters, cartazes, etc) nos arredores do IME, o que custou em
+            torno de <b>1h</b> de realização.
+        </p>
+
+        <p>Com relação ao GT técnico, tive uma participação maior que a planejada para o evento. Com relação às reuniões, participei de duas (em 01/10 e 08/10), que tomou por conta de <b>1h30</b>.
+            Entretanto, neste GT, fiquei muito mais responsável por tarefas no backend e de DevOps. Antes de mais nada, agora o endereço do repositório está no grupo da Symcomp, <a href="https://github.com/Symcomp-IME-USP/symcomp-project">Neste link.</a> 
+            Aqui, continuei meu trabalho com Docker, visando um pipeline de desenvolvimento, testes e deploy na máquina de produção (uma máquina do IME disponibilizada aos membros para acesso remoto).
+            Mas também fiquei responsável por implementar algumas features no backend, como rotas/endpoints para obtenção de ranking, alguns fixes, etc. Dois desses pull requests podem ser encontrados <a href="https://github.com/Symcomp-IME-USP/symcomp-project/pull/3">aqui</a> e <a href="https://github.com/Symcomp-IME-USP/symcomp-project/pull/5">aqui.</a>
+        </p>
+        <p>
+            Ao mesmo tempo, fiquei responsável por fazer deploys no servidor remoto, garantindo que as configurações estavam corretas, e nenhum erro estivesse ocorrendo nos containers dos serviços, e que o Apache (servindo como um reverse proxy) estava funcionando corretamente.
+            No geral, acredito que dediquei em torno de <b>10h</b> de estudos e desenvolvimento para este GT até o momento, o que ultrapassou o planejamento inicial de <b>8h</b> para o mês de outubro.
+       </p>
+
+       <h2>Parte 2</h2>
+       <hr>
+       <p>Olá, esta é a segunda seção do post para outubro!</p>
+       <p>Nesta parte, irei detalhar meu envolvimento maior com o GT técnico, até o dia antes da semana (dia 19/10), visto que tivemos bastante trabalho para conseguir deixar o site pronto para o público!</p>
+       <p>Aqui, optamos por não seguir com o deploy do website na máquina remota do IME, e migramos o serviço para a Cloud, usango o <b>Google Cloud Provider</b> sob minha conta. Aqui, fiquei
+            responsável por fazer essa migração corretamente, reconfigurando o que era necessário, além de instalar novos serviços como Nginx na Máquina Virtual remota que o site estaria hospedado, para que as rotas de frontend e backend estivessem
+            funcionando corretamente. Também fiquei responsável por realizar a configuração do HTTPS para deploy, com serviços como CertBot.
+            Com relação ao desenvolvimento, fiz algumas refatorações no código de backend e frontend, principalmente com relação ao login dos usuários, migrando para que usássemos uma solução com cookies HttpOnly de forma segura. Estas mudanças podem ser encontradas <a href="https://github.com/Symcomp-IME-USP/symcomp-project/pull/7">aqui.</a>
+    </p>
+        <p>Após isso, também fiquei responsável por algumas features e fixes que podem ser encontradas <a href="https://github.com/Symcomp-IME-USP/symcomp-project/pull/12">aqui</a> e <a href="https://github.com/Symcomp-IME-USP/symcomp-project/pull/14">aqui.</a> Dessa forma, implementei algumas necessidades para que o time de front-end pudesse continuar o trabalho com o site.</p>
+        <p>Com a configuração em Cloud, administração do sistema que o website seria implementado, e o desenvolvimento de backend, dediquei em torno de umas <b>6h</b> adicionais para que tudo corresse bem com o sistema durante a semana. E funcionou muito bem! Seguem abaixo algumas fotos do site, caso o mesmo esteja fora do ar no momento que estiver vendo este post</p>
+
+        <img src="assets/site1.png" alt="GT técnico" class="aspect-video object-cover" /><img>
+       <img src="assets/site2.png" alt="GT técnico" class="aspect-video object-cover" /><img>
+       <img src="assets/site3.png" alt="GT técnico" class="aspect-video object-cover" /><img>
+       <img src="assets/site4.png" alt="GT técnico" class="aspect-video object-cover" /><img>
+
+       <p>Ainda falta muito trabalho para poder manter o site funcional para a edição do ano que vem!</p>
+
+       <p>No GT geral, participei de uma última reunião antes do evento, em 17/10, para alinhar o GT técnico com os participantes da Symcomp e novos voluntários da semana, o que tomou em torno de <b>1h</b>. Com relação ao evento em si, participei (como planejado) de 4 dias da semana, de segunda à quinta (11h até 19h, em torno, para cada dia), durante toda a organização do evento (exceto em dias que cheguei um pouco mais tarde, como quarta).
+        Durante a semana, participei na organização geral, organizando o stand de vendas, mesas, painéis, entre outras coisas. Também fiquei responsável pelos bastidores de algumas palestras, supervisionando a palestra, apresentando os palestrantes, fazendo as configurações de slides, entre outras coisas.
+        Nesta parte, também fiquei responsável por alguns sorteios, que eram realizados por meio do site que desenvolvemos, no painel de administradores. Além disso, cuidei para realizar a marcação de presenças (manualmente ou código QR) dos participantes.
+        Fora a parte de palestras, auxiliei na organização dos coffee breaks, no stand de vendas e desafios, auxílio no stand de patrocinadores, entre outras coisas.
+       </p>
+
+       <p>No geral, dediquei em torno de <b>20h</b> durante a semana, considerando pausas, descansos, e o dia que não fui, assim como planejado.</p>
+       <p>Isso é tudo para este post! Para o mês de novembro, nos organizaremos para arquivar e catalogar informações sobre a semana, assim como dar continuidade no desenvolvimento do site, para que a edição do ano seguinte esteja mais preparada nesta frente!</p>
+    </div>
+</article>
+
+</main>
