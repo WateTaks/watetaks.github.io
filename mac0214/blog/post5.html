@@ -1,0 +1,39 @@
+<main class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+
+<div class="mb-8">
+    <a href="" class="btn btn-ghost gap-2" hx-get="pages/blog.html" 
+        hx-target="#content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+        </svg>
+        Voltar para o Blog
+    </a>
+</div>
+
+
+<article class="mockup-window bg-base-300 border border-base-300 w-full max-w-256 shadow-lg text-white [&_a]:text-accent">
+    <div class="prose lg:prose-xl prose-invert max-w-none break-word p-6 md:p-8">
+        <h1 class="mt-2">Progresso #5</h1>
+        <p>25 de novembro, 2025</p>
+        <hr>
+        
+        <p>Olá, este é o quinto e último post desse site, relatando o progresso de novembro para a XV Semana da Computação</p>
+        <hr>
+        
+        <p>Como o evento ocorre no fim do mês de outubro, não resta muito trabalho para a organização da Symcomp realizar (justamente por isso planejei realizar menos de 10h de trabalho).
+        </p>
+        <p>Entretanto, a frente técnica ainda precisava de alguns cuidados, como a preservação do banco de dados do site. Então, foquei nessas partes.</p>
+        <p>Nesse GT, realizei a preservação do banco de dados em PostgreSQL que se encontrava na nuvem, para que os dados não se perdessem ao desligar a instância do GCP futuramente. Pretendo ainda realizar o backup de variáveis de ambiente e configurações de Nginx, Certbot, e etc, para que a VM não perca esses dados. Com esse
+            backup, realizei a análise de dados importantes para colegas e para a organização, como nº de presenças totais, nº de participantes distintos, médias por palestra, entre outras coisas. Isso tudo foi feito diretamente com SQL. Para isso, dediquei em torno de <b>4h</b>. Segue uma print de trabalho que estava fazendo:
+        </p>
+        <img src="assets/screen1.png" alt="SQL" class="aspect-video object-cover" /><img>
+        <p>Além disso, com esses dados, realizei a exportação para CSV, de forma que eu pudesse utilizar a planilha de presenças para contagem de horas de participação de cada participante e fazer um envio automatizado de certificados, com o nome completo que foi registrado no site. Para essa tarefa adicional, feita com Python e Pandas, trabalhei em torno de <b>2h</b>.</p>
+        <img src="assets/screen2.png" alt="Dados" class="aspect-video object-cover" /><img>
+        <p>Você pode ver o PR que fiz de um dos scripts <a href="https://github.com/Symcomp-IME-USP/symcomp-smtp/pull/1">aqui</a>.</p>
+        <p>Por fim, tivemos reuniões de encerramento da frente geral e técnica, o que tomou por volta de <b>2h</b>. Nessas reuniões, discutimos os resultados que alcançamos, além de checar o feedback entre organizadores e voluntários da semana. A frente técnica também teve uma reunião, para verificarmos o que tinha a ser feito entre a equipe. Para o encerramento geral, tivemos e-mails de follow ups com empresas, sobre questões de contratos e etc, além de contatos para esclarecimentos
+        com estudantes e gestão de documentos, o que tomou por volta de <b>1h</b>.</p>
+        <p>Dessa forma, dediquei em torno de ~9h para o mês de novembro, a dedicar para um bom encerramento desse evento! Estou ansioso para a próxima edição!</p>
+    </div>
+</article>
+
+</main>
